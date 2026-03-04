@@ -31,8 +31,8 @@ This repository already includes:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/fperaltaardanuy/traction-resistance-curves.git
+cd traction-resistance-curves
 ```
 
 ### 2. Create and activate a virtual environment
