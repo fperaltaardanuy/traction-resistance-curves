@@ -62,7 +62,7 @@ class MechanicsBridge:
         return self._mechanics
 
     def straight_resistance_kn(self, v_kph, a, b, c, tunnel_factor, starting_resistance):
-        # Based on the validated behavior in your DLL/data set, this comes out in kN.
+        # Returns kN
         return float(
             self.mechanics.StraightResistance(
                 float(v_kph),
@@ -84,7 +84,7 @@ class MechanicsBridge:
         ) / 1000.0
 
     def total_resistance_kn(self, straight_resistance_kn, slope_resistance_kn):
-        # Simple sum, staying in kN
+        # Returns kN
         return float(straight_resistance_kn) + float(slope_resistance_kn)
 
     def adherence_force_kn(self, adherence_coefficient, speed_mps, adherent_mass_kg):
