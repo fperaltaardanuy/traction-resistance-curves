@@ -1,0 +1,61 @@
+{
+    "vehicle_name": "Tren",
+    "mass_t": 2200.0,
+    "adherent_mass_t": 120.0,
+    "adherence_coefficient": 0.3,
+    "straight_resistance": {
+        "a": 35.1,
+        "b": 0.642,
+        "c": 0.01395,
+        "tunnelFactor": 1.0,
+        "startingResistance": 0.0
+    },
+    "traction_effort_curve": [
+        {
+            "speed": 0.0,
+            "effort_kN": 500.0
+        },
+        {
+            "speed": 44.0,
+            "effort_kN": 500.0
+        },
+        {
+            "speed": 50.0,
+            "effort_kN": 444.24
+        },
+        {
+            "speed": 60.0,
+            "effort_kN": 370.2
+        },
+        {
+            "speed": 70.0,
+            "effort_kN": 317.31
+        },
+        {
+            "speed": 80.0,
+            "effort_kN": 277.65
+        },
+        {
+            "speed": 90.0,
+            "effort_kN": 246.8
+        },
+        {
+            "speed": 100.0,
+            "effort_kN": 222.12
+        },
+        {
+            "speed": 110.0,
+            "effort_kN": 201.93
+        },
+        {
+            "speed": 120.0,
+            "effort_kN": 185.1
+        }
+    ],
+    "calculation": {
+        "slope_per_thousand": 12.0,
+        "max_speed_kph": 120.0,
+        "speed_step_kph": 0.5,
+        "y_mode": "force"
+    }
+}
